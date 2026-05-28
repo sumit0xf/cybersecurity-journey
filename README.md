@@ -62,6 +62,6 @@ Long term → AI security research, remote work, own security startup
 - `scripts/` — tools and scripts I build
 
 ## 📊 Progress
-**Started:**   
+**Started:** 20/05/2026   
 **Current phase:** Phase 1 — Foundations  
-**Days logged:** 2
+**Days logged:** 9
