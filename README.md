@@ -23,9 +23,9 @@ Long term → AI security research, remote work, own security startup
 ### Phase 1 — Foundations (Current)
 - [x] Set up Kali Linux on VirtualBox
 - [x] Python basics — functions, string methods
-- [ ] Complete Python fundamentals (CodeWithHarry)
-- [ ] Linux command line fluency (NetworkChuck series)
-- [ ] Networking fundamentals
+- [x] Complete Python fundamentals (CodeWithHarry)
+- [x] Linux command line fluency (NetworkChuck series)
+- [ ] Networking fundamentals [In Progress]
 
 ### Phase 2 — Offensive Security Basics
 - [ ] TryHackMe Pre-Security path
@@ -62,6 +62,6 @@ Long term → AI security research, remote work, own security startup
 - `scripts/` — tools and scripts I build
 
 ## 📊 Progress
-**Started:** [your start date]  
+**Started:**   
 **Current phase:** Phase 1 — Foundations  
 **Days logged:** 2
