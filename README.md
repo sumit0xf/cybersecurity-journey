@@ -25,10 +25,10 @@ Long term → AI security research, remote work, own security startup
 - [x] Python basics — functions, string methods
 - [x] Complete Python fundamentals (CodeWithHarry)
 - [x] Linux command line fluency (NetworkChuck series)
-- [ ] Networking fundamentals [In Progress]
+- [x] Networking fundamentals 
 
 ### Phase 2 — Offensive Security Basics
-- [ ] TryHackMe Pre-Security path
+- [ ] TryHackMe Pre-Security path [In Progress]
 - [ ] TryHackMe Jr Penetration Tester path
 - [ ] PortSwigger Web Academy
 - [ ] First CTF completion + writeup
@@ -64,4 +64,4 @@ Long term → AI security research, remote work, own security startup
 ## 📊 Progress
 **Started:** 20/05/2026   
 **Current phase:** Phase 1 — Foundations  
-**Days logged:** 9
+**Days logged:** 10
