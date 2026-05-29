@@ -38,8 +38,15 @@
 - How to structure a security portfolio on GitHub
 - Commit messages, branches
 
-**Tomorrow's plan:**
-- Continue with THM rooms
-- Watching lectures on Linux & Python Fundamentals
-
+## Day 10 
+**Topics:** OSI MODEL & File permssions and Text editors
+**What I did:**
+- Completed OSI Model Room in TryHackMe
+- Lecture on File Permissions and Text Editors
+- Made an Linux command line cheat sheet
+- Pactice chmod command
+     
+**Key learnings:**
+- File permissions are very imporrtant concepts to learn
+- Text editors for Bash scripting will be needed for python scripts
 ---
