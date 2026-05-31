@@ -49,4 +49,18 @@
 **Key learnings:**
 - File permissions are very imporrtant concepts to learn
 - Text editors for Bash scripting will be needed for python scripts
+
+## Day 11
+**Topics:** Essential linux file management commands & Packets and frames
+**What I did:**
+- Packets and frames room
+- And network fundamentals part 1
+- Practice of linux file management commands
+- grep & find commands are essential to find specific files
+- also did research on metasploitable 2
+
+  **key learnings:**
+- Get comfortable with TCP/IP & UDP/IP
+- How files are managed on linux
+- Ports 101 very important  
 ---
