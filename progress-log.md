@@ -62,5 +62,75 @@
   **key learnings:**
 - Get comfortable with TCP/IP & UDP/IP
 - How files are managed on linux
-- Ports 101 very important  
+- Ports 101 very important
+
+# Day 12 — Bash Scripting Begins 🟣
+
+**Roadmap Phase:**  — Linux & Python Fundamentals
+
+---
+
+## What I Covered Today
+
+### 📚 Tutedude — Module 3, Lectures 5 & 6
+- Bash scripting fundamentals
+- Variables, echo, and command substitution
+- For loops and directory manipulation
+
+### 🟥 TryHackMe — Pre-Security Path
+- Completed: **Extending Your Network** room
+- Topics: network extension concepts, VPNs, and network protocols
+
+---
+
+## Lab — Scripts Written in Kali Linux
+
+### Script 1 — Variables & Echo (`variables.sh`)
+```bash
+#!/bin/bash
+name="Sumit"
+echo "Hello $name"
+echo "Today is $(date)"
+```
+**What I learned:**
+- Declaring and using variables with `$`
+- `$(command)` syntax for command substitution inside a string
+
+---
+
+### Script 2 — For Loop (`loop.sh`)
+```bash
+#!/bin/bash
+for i in 1 2 3 4 5
+do
+  mkdir "folder_$i"
+  echo "Created folder_$i"
+done
+ls
+rm -rf folder_*
+echo "Cleaned up!"
+```
+**What I learned:**
+- `for` loop syntax in bash
+- Creating multiple directories dynamically using a loop variable
+- Cleaning up with `rm -rf` and wildcard `*`
+
+---
+
+## Key Concepts
+
+| Concept | Syntax | Example |
+|---------|--------|---------|
+| Variable declaration | `name="value"` | `name="Sumit"` |
+| Variable usage | `$name` | `echo $name` |
+| Command substitution | `$(command)` | `$(date)` |
+| For loop | `for i in ... do ... done` | See Script 2 |
+| Make executable | `chmod +x file.sh` | `chmod +x script.sh` |
+| Run script | `./file.sh` | `./script.sh` |
+
+---
+
+---
+
+*Part of my 28-day cybersecurity learning roadmap.*
 ---
