@@ -64,4 +64,5 @@ Long term → AI security research, remote work, own security startup
 ## 📊 Progress
 **Started:** 20/05/2026   
 **Current phase:** Phase 1 — Foundations  
-**Days logged:** 13
+**Days logged:** 16
+
