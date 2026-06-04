@@ -128,7 +128,156 @@ echo "Cleaned up!"
 | Make executable | `chmod +x file.sh` | `chmod +x script.sh` |
 | Run script | `./file.sh` | `./script.sh` |
 
+
+## Day 13 – Operating Systems Fundamentals
+
+### TryHackMe
+
+* Completed: DNS in detail
+
+### Practical Commands
+
+```bash
+ps aux
+top
+htop
+```
+
+### Tutedude
+
+* Module 4 completed:
+
+  * Information Gathering (Active & Passive)
+  * Common Threat Vectors: Malicious Code and Phishing
+  * Modern Attack Methodologies: From Social to Technical
+
+### Assignments
+
+* Assignment 1 (Basic Linux Commands) ✅ Approved
+* Assignment 2 (Linux Permissions) ✅ Approved
+* Assignment 3 (File System Commands) ✅ Approved
+* Assignment 4 (Bash Scripting) ✅ Approved
+* Assignment 5 (Information Gathering) ⏳ Pending
+
 ---
+
+## Day 14 – Command Line & System Navigation
+
+### TryHackMe
+
+* Completed: HTTP in detail
+
+### Key Concepts Learned
+
+* Linux command line navigation
+* Windows command line navigation
+* File management
+* System administration basics
+
+### Practical Revision
+
+```bash
+find
+grep
+chmod
+nano
+vim
+```
+
+### Realization
+
+Understanding the command line is critical because most cybersecurity work happens in terminals rather than graphical interfaces.
+
+---
+
+## Day 15 – Operating System Security
+
+### TryHackMe
+
+* Completed: How websites work
+
+### Key Concepts Learned
+
+* Authentication vs Authorization
+* Least Privilege Principle
+* User Accounts and Permissions
+* Linux Security Concepts
+* Windows Security Concepts
+
+### Security Perspective
+
+Misconfigured permissions remain one of the most common privilege escalation vectors in real-world environments.
+
+---
+
+## Day 16 – Software Fundamentals
+
+### TryHackMe
+
+* Completed: Putting it all together
+
+### Python Practice
+
+Built a DNS Lookup Utility:
+
+```python
+import socket
+
+host = input("Target: ")
+
+try:
+    print(socket.gethostbyname(host))
+except:
+    print("Invalid host")
+```
+
+---
+
+## Projects Built So Far
+
+### Project 1 – TCP Port Scanner
+
+* Built using Python sockets
+* Scans target hosts for open ports
+
+### Project 2 – Threaded TCP Port Scanner
+
+* Implemented ThreadPoolExecutor
+* Significantly improved scan speed
+
+### Project 3 – DNS Lookup Tool
+
+* Resolves domain names to IP addresses
+* Uses Python socket library
+
+### Bash Projects
+
+* Folder Creation Automation Script
+* Network Ping Script
+* Secret Reader Script
+
+---
+
+## Current Progress
+
+### TryHackMe
+
+* Pre-Security Path: 50% Complete
+
+Completed Sections:
+
+* Introduction to Cyber Security
+* Network Fundamentals
+* How The Web Works
+
+### Tutedude
+
+* Modules 1–4 Completed
+* Assignments 1–4 Approved
+* Assignment 5 Pending
+
+Consistency Streak: 9+ Days 🔥
+
 
 ---
 
