@@ -20,7 +20,7 @@ Long term → AI security research, remote work, own security startup
 
 ## 🗺️ Roadmap
 
-### Phase 1 — Foundations (Current)
+### Phase 1 — Foundations (Completed)
 - [x] Set up Kali Linux on VirtualBox
 - [x] Python basics — functions, string methods
 - [x] Complete Python fundamentals (CodeWithHarry)
@@ -28,7 +28,7 @@ Long term → AI security research, remote work, own security startup
 - [x] Networking fundamentals 
 
 ### Phase 2 — Offensive Security Basics
-- [ ] TryHackMe Pre-Security path [In Progress]
+- [x] TryHackMe Pre-Security path 
 - [ ] TryHackMe Jr Penetration Tester path
 - [ ] PortSwigger Web Academy
 - [ ] First CTF completion + writeup
