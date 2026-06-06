@@ -276,7 +276,22 @@ Completed Sections:
 * Assignments 1–4 Approved
 * Assignment 5 Pending
 
-Consistency Streak: 9+ Days 🔥
+### Day 11: Web Application Security & Core Interception Tools
+
+#### 📚 Theory & Concepts Learned
+* **Web App Security Foundations:** Finished Tutedude Module 5 (Lectures 3 & 7) focusing on how data moves between web clients and backend servers.
+* **Authentication & Parameters:** Learned how web forms use hidden parameter names (like `uname`, `submit`) to send user data to the backend.
+* **Vulnerability Mechanics:** Deep-dived into the mechanics of **SQL Injection (SQLi)** and how special characters (like `'` and `--`) alter backend database queries.
+
+#### 🛠️ Practical Skills & Hands-On Labs
+* **Burp Suite Proficiency:** Configured and mastered traffic interception, modifying parameters, and forwarding raw HTTP requests using Burp's built-in browser and **Repeater** module.
+* **PortSwigger Web Academy - Completed:**
+    1.  *Lab 1 (SQLi in WHERE clause):* Successfully bypassed a product filter category using the payload `' OR 1=1--` to retrieve hidden/unreleased database records.
+    2.  *Lab 2 (SQLi Login Bypass):* Exploited a vulnerable login mechanism using the payload `administrator'--` to completely comment out the password check and hijack the admin account.
+* **TryHackMe:** Completed the final Pre-Security path checkpoint (**'Become a Defender'** room). Officially cleared for the Junior Penetration Tester path.
+
+#### 💻 Automation & Scripting
+* **Python Exploitation Tooling:** Analyzed and debugged a custom multi-payload login tester using the Python `requests` library. Understood how loops feed automated payloads into target `form_data` structures to scale vulnerability scanning.
 
 
 ---
