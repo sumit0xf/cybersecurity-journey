@@ -32,5 +32,39 @@ for port in ports:
         print(f"[DOWN] Port {port}")
     sock.close()  
 ```
-# This script onnly scans the ports that are given 
-# To scan all ports we need to use threading that scans 100 ports at a time
+This script onnly scans the ports that are given 
+To scan all ports we need to use threading that scans 100 ports at a time
+
+### 2. dns_resolver.py
+**What it does:** Takes a domain name as input and resolves it to an IP address.  
+**Concept:** DNS resolution — every domain maps to an IP. 
+`gethostbyname()` queries the DNS chain to find it.  
+**Industry tool equivalent:** `nslookup`, `dig`, `host`  
+**Key learning:** Before you scan or attack anything, you need the IP. 
+This is always step 1 in active recon.
+
+**Usage:**
+```
+import socket
+
+target = input("Enter Your Domain : ")
+print(f"Recon Started For {target}")
+
+try:
+    ip = socket.gethostbyname(target)
+    print(f"Domain: {target}")
+    print(f"IP: {ip}")
+except socket.gaierror:
+    print(f"Could not resolve {target} — domain may not exist")
+```
+
+**Sample output:**
+```
+Recon Started For google.com
+Domain: google.com
+IP: 142.250.77.46
+```
+
+**Bug bounty use case:** Resolve all subdomains from your subdomain 
+enumeration list to IPs. Any subdomain that resolves = live target worth 
+investigating further.
