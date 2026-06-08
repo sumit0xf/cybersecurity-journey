@@ -276,7 +276,7 @@ Completed Sections:
 * Assignments 1–4 Approved
 * Assignment 5 Pending
 
-### Day 11: Web Application Security & Core Interception Tools
+### Day 17: Web Application Security & Core Interception Tools
 
 #### 📚 Theory & Concepts Learned
 * **Web App Security Foundations:** Finished Tutedude Module 5 (Lectures 3 & 7) focusing on how data moves between web clients and backend servers.
@@ -293,6 +293,26 @@ Completed Sections:
 #### 💻 Automation & Scripting
 * **Python Exploitation Tooling:** Analyzed and debugged a custom multi-payload login tester using the Python `requests` library. Understood how loops feed automated payloads into target `form_data` structures to scale vulnerability scanning.
 
+
+
+# Day 18: OWASP Top 10, SQL Injection, and Tool Building
+**Date:** June 7, 2026
+
+## 📚 Theory & Concepts Covered
+* **OWASP Top 10 (2025) Breakdown:** Completed Module 5, Lectures 8 and 9. Focused on understanding critical web application security risks, shifting patterns in common vulnerabilities, and modern defensive strategies.
+* **SQL Injection Fundamentals:** Completed the TryHackMe *SQL Injection Introduction* room (Web App Vulnerabilities I module). Studied how unsanitized user input can manipulate backend database queries.
+
+## 🔬 Hands-on Labs & Exploitation
+* **DVWA Manual Exploitation:** Practiced manual SQLi testing on Damn Vulnerable Web Application (DVWA). 
+    * Utilized the classic authentication bypass payload: `' OR 1=1--`
+    * **Takeaway:** Analyzed how the breaking quote (`'`) forces an early exit in the SQL syntax, while `OR 1=1` creates a condition that evaluates to true for every row, and `--` comments out the remainder of the original query.
+* **PortSwigger Web Security Academy:** Successfully completed 2 additional SQLi labs (bringing the total to 4 completed labs) to practice identifying entry points and extracting data in realistic environments.
+
+## 💻 Code & Automation (Build #2)
+* **Project Name:** Automated SQLi Vulnerability Tester
+* **Language:** Python
+* **Functionality:** Developed a script from scratch that automates entry-point testing. The tool sends a list of common SQLi payloads to a target parameter and parses the HTTP response to detect specific database error strings (e.g., MySQL, PostgreSQL, or Oracle syntax errors).
+* **Key Learnings:** Gained hands-on experience in using the `requests` library for automated payload injection and handling custom HTTP headers/parameters.
 
 ---
 
