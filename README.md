@@ -63,6 +63,6 @@ Long term → AI security research, remote work, own security startup
 
 ## 📊 Progress
 **Started:** 20/05/2026   
-**Current phase:** Phase 1 — Foundations  
+**Current phase:** Phase 2 — Offensive Security Basics
 
 
