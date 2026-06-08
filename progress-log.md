@@ -314,6 +314,20 @@ Completed Sections:
 * **Functionality:** Developed a script from scratch that automates entry-point testing. The tool sends a list of common SQLi payloads to a target parameter and parses the HTTP response to detect specific database error strings (e.g., MySQL, PostgreSQL, or Oracle syntax errors).
 * **Key Learnings:** Gained hands-on experience in using the `requests` library for automated payload injection and handling custom HTTP headers/parameters.
 
+
+# Day 19: Website Defacement and CSRF Fundamentals
+**Date:** June 8, 2026
+
+## 📚 Theory & Concepts Covered
+* **Website Defacement Practical:** Completed Module 5, Lecture 6. Explored how attackers gain unauthorized access to alter the visual appearance of a target website, the typical entry points used, and defensive remediation steps.
+* **Cross-Site Request Forgery (CSRF):** Completed the TryHackMe *CSRF Introduction* room (Web App Vulnerabilities I module). 
+    * **Core Concept:** Analyzed how attackers trick a victim's browser into executing unwanted actions on a trusted web application where the victim is currently authenticated.
+    * **Key Mechanics:** Studied the role of session cookies, the vulnerability of state-changing requests lacking unique tokens, and how standard defensive mechanisms like SameSite cookie attributes and anti-CSRF tokens mitigate these attacks.
+
+## 📝 Assignments & Submissions
+* **Assignment 7 (Admin Panel):** Successfully completed the relevant tasks in the TryHackMe `tutedude-cybersec` room, documented the proof of compromise via screenshots, and compiled the final submission zip.
+* **Assignment 8 (IDOR):** Analyzed Insecure Direct Object References within the lab environment, demonstrated the ability to access unauthorized user data by manipulating parameters, and submitted the required documentation.
+
 ---
 
 *Part of my 28-day cybersecurity learning roadmap.*
