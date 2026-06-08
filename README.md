@@ -29,7 +29,7 @@ Long term → AI security research, remote work, own security startup
 
 ### Phase 2 — Offensive Security Basics
 - [x] TryHackMe Pre-Security path 
-- [ ] TryHackMe Jr Penetration Tester path
+- [ ] TryHackMe Jr Penetration Tester path [In Progress]
 - [ ] PortSwigger Web Academy
 - [ ] First CTF completion + writeup
 
@@ -64,5 +64,5 @@ Long term → AI security research, remote work, own security startup
 ## 📊 Progress
 **Started:** 20/05/2026   
 **Current phase:** Phase 1 — Foundations  
-**Days logged:** 17
+
 
