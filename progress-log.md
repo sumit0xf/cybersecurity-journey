@@ -328,6 +328,23 @@ Completed Sections:
 * **Assignment 7 (Admin Panel):** Successfully completed the relevant tasks in the TryHackMe `tutedude-cybersec` room, documented the proof of compromise via screenshots, and compiled the final submission zip.
 * **Assignment 8 (IDOR):** Analyzed Insecure Direct Object References within the lab environment, demonstrated the ability to access unauthorized user data by manipulating parameters, and submitted the required documentation.
 
+## Day 20
+
+### Tutedude
+Module 5 Lec 10 — Bug Bounty Workflow Part 1 (Recon + SQL Injection)
+Module 5 Lec 11 — Bug Bounty Workflow Part 2 (CSRF + RCE)
+
+### TryHackMe
+XSS Introduction [Web App Vulnerabilities I] ← carry-over from Day 13
+Burp Suite Repeater [Burp Suite]
+IDOR [Web App Vulnerabilities I]
+
+### Lab
+Build #3: HTTP header fuzzing tool in Python
+Test fuzzer on DVWA or a local target
+
+
+
 ---
 
 *Part of my 28-day cybersecurity learning roadmap.*
