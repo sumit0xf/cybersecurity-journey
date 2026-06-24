@@ -1,7 +1,7 @@
 # 📓 Progress Log
 
 ---
-## Days 1–8 — 20/05/2026 to 27/05/2026
+## Days 1-3
 **Topics:** Python fundamentals + Linux CLI basics
 **What I did:**
 - Completed Python basics through CodeWithHarry
@@ -23,7 +23,7 @@
   
 ---
 
-## Day 9 — 28/05/2026
+## Day 4 
 **Topics:** GitHub setup & learning roadmap finalization
 **What I did:**
 - Created GitHub repo `cybersecurity-journey`
@@ -38,7 +38,7 @@
 - How to structure a security portfolio on GitHub
 - Commit messages, branches
 
-## Day 10 
+## Day 5 
 **Topics:** OSI MODEL & File permssions and Text editors
 **What I did:**
 - Completed OSI Model Room in TryHackMe
@@ -50,7 +50,7 @@
 - File permissions are very imporrtant concepts to learn
 - Text editors for Bash scripting will be needed for python scripts
 
-## Day 11
+## Day 6
 **Topics:** Essential linux file management commands & Packets and frames
 **What I did:**
 - Packets and frames room
@@ -64,7 +64,7 @@
 - How files are managed on linux
 - Ports 101 very important
 
-# Day 12 — Bash Scripting Begins 🟣
+# Day 7 — Bash Scripting Begins 🟣
 
 **Roadmap Phase:**  — Linux & Python Fundamentals
 
@@ -129,7 +129,7 @@ echo "Cleaned up!"
 | Run script | `./file.sh` | `./script.sh` |
 
 
-## Day 13 – Operating Systems Fundamentals
+## Day 8 – Operating Systems Fundamentals
 
 ### TryHackMe
 
@@ -161,7 +161,7 @@ htop
 
 ---
 
-## Day 14 – Command Line & System Navigation
+## Day 9 – Command Line & System Navigation
 
 ### TryHackMe
 
@@ -190,7 +190,7 @@ Understanding the command line is critical because most cybersecurity work happe
 
 ---
 
-## Day 15 – Operating System Security
+## Day 10 – Operating System Security
 
 ### TryHackMe
 
@@ -210,7 +210,7 @@ Misconfigured permissions remain one of the most common privilege escalation vec
 
 ---
 
-## Day 16 – Software Fundamentals
+## Day 11 – Software Fundamentals
 
 ### TryHackMe
 
@@ -276,7 +276,7 @@ Completed Sections:
 * Assignments 1–4 Approved
 * Assignment 5 Pending
 
-### Day 17: Web Application Security & Core Interception Tools
+### Day 12: Web Application Security & Core Interception Tools
 
 #### 📚 Theory & Concepts Learned
 * **Web App Security Foundations:** Finished Tutedude Module 5 (Lectures 3 & 7) focusing on how data moves between web clients and backend servers.
@@ -295,7 +295,7 @@ Completed Sections:
 
 
 
-# Day 18: OWASP Top 10, SQL Injection, and Tool Building
+# Day 13: OWASP Top 10, SQL Injection, and Tool Building
 **Date:** June 7, 2026
 
 ## 📚 Theory & Concepts Covered
@@ -315,7 +315,7 @@ Completed Sections:
 * **Key Learnings:** Gained hands-on experience in using the `requests` library for automated payload injection and handling custom HTTP headers/parameters.
 
 
-# Day 19: Website Defacement and CSRF Fundamentals
+# Day 14: Website Defacement and CSRF Fundamentals
 **Date:** June 8, 2026
 
 ## 📚 Theory & Concepts Covered
@@ -328,7 +328,7 @@ Completed Sections:
 * **Assignment 7 (Admin Panel):** Successfully completed the relevant tasks in the TryHackMe `tutedude-cybersec` room, documented the proof of compromise via screenshots, and compiled the final submission zip.
 * **Assignment 8 (IDOR):** Analyzed Insecure Direct Object References within the lab environment, demonstrated the ability to access unauthorized user data by manipulating parameters, and submitted the required documentation.
 
-## Day 20
+## Day 15
 
 ### Tutedude
 Module 5 Lec 10 — Bug Bounty Workflow Part 1 (Recon + SQL Injection)
@@ -344,8 +344,246 @@ Build #3: HTTP header fuzzing tool in Python
 Test fuzzer on DVWA or a local target
 
 
+# Day 15 — Network VAPT: Black Box Intro 🔍
+**Date:** June 20, 2026
+**Roadmap Phase:** Module 6 — Black Box & Grey Box VAPT
+
+---
+
+## What I Covered Today
+
+### 📚 Tutedude — Module 6, Lectures 1–3
+- Introduction to Network VAPT methodology
+- Black Box testing approach — zero prior knowledge of target
+- Reconnaissance phases: passive and active recon
+- Understanding scope, rules of engagement, and reporting basics
+
+### 🟥 TryHackMe
+- **Offensive Security Intro** — understanding the attacker mindset, ethical hacking overview
+- **Defensive Security Intro** — blue team concepts, SOC, threat intelligence, SIEM basics
+
+---
+
+## Key Concepts
+
+| Concept | Description |
+|---------|-------------|
+| Black Box Testing | Tester has zero knowledge of target infrastructure |
+| Passive Recon | Gathering info without touching the target (OSINT, Shodan) |
+| Active Recon | Direct interaction with target (nmap, ping sweeps) |
+| Rules of Engagement | Scope boundaries defined before any test begins |
+| Offensive Security | Finding vulnerabilities before attackers do |
+| Defensive Security | Detecting, preventing, and responding to attacks |
+
+---
+
+## Key Takeaway
+Black Box VAPT mirrors real-world attacker conditions — you start with nothing and build a picture of the target through methodical recon. Understanding both offensive and defensive perspectives is essential for effective pentesting.
+
+---
+
+*Part of my 28-day cybersecurity learning roadmap.*
+
+---
+---
+
+# Day 16 — Metasploit + Scanning 🔫
+**Date:** June 21, 2026
+**Roadmap Phase:** Module 6 — Black Box & Grey Box VAPT
+
+---
+
+## What I Covered Today
+
+### 📚 Tutedude — Module 6, Lectures 4–6
+- Metasploit Framework architecture and components
+- Understanding modules: exploits, payloads, auxiliaries, post
+- Scanning with Metasploit auxiliary modules
+- Setting RHOSTS, LHOST, LPORT options
+- Difference between staged and stageless payloads
+
+### 🟥 TryHackMe
+- **Metasploit: The Basics** — msfconsole navigation, search, use, show options
+- **Metasploit: Scanning and Exploitation** — db_nmap, auxiliary scanners, running exploits
+
+---
+
+## Key Concepts
+
+| Concept | Description |
+|---------|-------------|
+| msfconsole | Main Metasploit interface |
+| Auxiliary modules | Scanners, fuzzers, no payload needed |
+| Exploit modules | Code that takes advantage of a vulnerability |
+| Payload | Code executed on target after exploitation |
+| Staged payload | Sends small stager first, pulls rest from attacker |
+| Stageless payload | Single self-contained payload, more reliable |
+| RHOSTS | Target IP address |
+| LHOST | Attacker IP (your machine) |
+| db_nmap | Nmap integrated into Metasploit database |
+
+---
+
+## Metasploit Basic Workflow
+```
+msfconsole
+search <vulnerability>
+use <module number>
+show options
+set RHOSTS <target IP>
+set LHOST <your IP>
+exploit
+```
+
+---
+
+## Key Takeaway
+Metasploit is a framework, not a magic button — understanding each component (exploit, payload, options) separately is what makes you effective with it. Staged vs stageless payload choice directly impacts reliability of shells.
+
+---
+
+*Part of my 28-day cybersecurity learning roadmap.*
+
+---
+---
+
+# Day 17 — Exploitation + Shells 🐚
+**Date:** June 22, 2026
+**Roadmap Phase:** Module 6 — Black Box & Grey Box VAPT
+
+---
+
+## What I Covered Today
+
+### 📚 Tutedude — Module 6, Lectures 7–9
+- Types of shells: bind shell vs reverse shell
+- Meterpreter vs command shell — differences and use cases
+- Post-exploitation basics: enumeration, privilege checking
+- Metasploitable 2 as a lab target — intentionally vulnerable Linux VM
+
+### 🟥 TryHackMe
+- **Shells and Listeners** — netcat listeners, reverse shells, bind shells, shell stabilization
+
+### 🔬 Lab — Metasploitable 2 Exploitation
+- Identified running services on Metasploitable 2 via nmap
+- Exploited vsftpd 2.3.4 backdoor vulnerability
+- Gained root shell on target
+- Confirmed access with `id`, `whoami`, `hostname`
+
+---
+
+## Key Concepts
+
+| Concept | Description |
+|---------|-------------|
+| Reverse Shell | Target connects back to attacker |
+| Bind Shell | Attacker connects to listener on target |
+| Meterpreter | Advanced in-memory shell, feature-rich |
+| Command Shell | Raw shell, basic but reliable |
+| Shell Stabilization | Making raw shells interactive (python pty) |
+| vsftpd 2.3.4 | FTP backdoor planted in source code (CVE-2011-2523) |
+| Metasploitable 2 | Intentionally vulnerable VM for practice |
+
+---
+
+## Shell Stabilization Technique
+```bash
+# After getting raw shell
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+export TERM=xterm
+# Ctrl+Z
+stty raw -echo; fg
+```
+
+---
+
+## vsftpd 2.3.4 Exploitation
+```bash
+use exploit/unix/ftp/vsftpd_234_backdoor
+set RHOSTS <target>
+exploit
+# Result: root shell, uid=0(root) gid=0(root)
+```
+
+---
+
+## Key Takeaway
+Reverse shells are preferred in real engagements because targets rarely have inbound firewall rules blocking outbound connections. Meterpreter is powerful but a raw command shell is often more reliable — know when to use each.
+
+---
+
+*Part of my 28-day cybersecurity learning roadmap.*
+
+---
+---
+
+# Day 18 — Privilege Escalation + AI Security Intro 🤖
+**Date:** June 23, 2026
+**Roadmap Phase:** Module 6 + Module 9 (AI Security)
+
+---
+
+## What I Covered Today
+
+### 📚 Tutedude — Module 6, Lectures 10–11
+- Grey Box VAPT methodology — partial knowledge of target
+- Linux Privilege Escalation techniques overview
+- SUID binaries, sudo misconfigurations, cron job abuse
+- Difference between Black Box and Grey Box engagements
+
+### 🟥 TryHackMe
+- **Linux PrivEsc Basics** — enumeration for privesc, common attack vectors
+
+### 📖 AI Security Reading
+- **OWASP LLM Top 10** (LLM01–LLM10) — first complete read
+- **Microsoft AI Red Team Blog** — first 3 posts, adversarial ML concepts
+
+---
+
+## Key Concepts
+
+### Privilege Escalation
+
+| Technique | Description |
+|-----------|-------------|
+| SUID binaries | Files that run as owner (root) regardless of who executes |
+| Sudo misconfiguration | Commands a user can run as root via sudo |
+| Cron job abuse | Writable scripts run by root on a schedule |
+| Writable /etc/passwd | Manually add root user |
+| Kernel exploits | Exploit unpatched kernel vulnerabilities |
+
+### OWASP LLM Top 10 Overview
+
+| ID | Vulnerability |
+|----|--------------|
+| LLM01 | Prompt Injection |
+| LLM02 | Insecure Output Handling |
+| LLM03 | Training Data Poisoning |
+| LLM04 | Model Denial of Service |
+| LLM05 | Supply Chain Vulnerabilities |
+| LLM06 | Sensitive Information Disclosure |
+| LLM07 | Insecure Plugin Design |
+| LLM08 | Excessive Agency |
+| LLM09 | Overreliance |
+| LLM10 | Model Theft |
+
+---
+
+## Grey Box vs Black Box
+
+| | Black Box | Grey Box |
+|--|-----------|----------|
+| Knowledge | Zero | Partial (credentials, architecture) |
+| Time | More recon needed | Faster, targeted |
+| Real world use | External attacker simulation | Authenticated user simulation |
+
+---
+
+## Key Takeaway
+Privilege escalation is almost always the step that turns a foothold into full system compromise. OWASP LLM Top 10 maps directly to real attack surfaces on AI products — Prompt Injection (LLM01) is already appearing in bug bounty programs. This is where offensive security and AI security start to converge.
 
 ---
 
 *Part of my 28-day cybersecurity learning roadmap.*
 ---
+
