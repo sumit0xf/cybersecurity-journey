@@ -584,6 +584,18 @@ Privilege escalation is almost always the step that turns a foothold into full s
 
 ---
 
+# Day 19 - AI Security
+
+#### 🛠️ What I Did Today
+*   **AI Red Teaming:** Completed Module 9 (Lec 1-2) covering Securing Emerging Tech and AI Red Teaming methodologies.
+*   **TryHackMe Labs:** Practiced exploiting web application flaws via the **Command Injection** module.
+*   **AI Security Lab (Gandalf):** Successfully attacked Lakera's **Gandalf AI Game (Level 5+)**. Documented advanced prompt injection bypass tactics (like JSON schema formatting, translation layering, and pseudo-code injection) used to defeat multi-layered LLM guardrails.
+*   **Documentation & Builds:** Formulated and published my `prompt-injection-notes.md` repository on GitHub to track active exploit payloads.
+*   **Community & Recon:** Signed up on HackerOne, joined the **AI Village Discord** to track open-source AI vulnerabilities, and completed a 30-minute target reconnaissance session.
+
+#### 📈 Key Takeaway
+Level 5+ guardrails cannot be beaten with simple keyword requests. Bypassing them requires breaking semantic continuity—forcing the LLM to switch contexts (e.g., treating a prompt like raw code execution or a JSON object) to bypass input/output validation firewalls.
+
 *Part of my 28-day cybersecurity learning roadmap.*
 ---
 
