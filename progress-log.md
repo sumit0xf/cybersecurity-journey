@@ -629,7 +629,8 @@ subfinder -d target.com
 # 2. Custom targeted enumeration tool
 python3 subdomain_enum.py
 
+```
+Part of my 28-day cybersecurity learning roadmap.
 
-*Part of my 28-day cybersecurity learning roadmap.*
----
+
 
