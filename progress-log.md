@@ -596,6 +596,40 @@ Privilege escalation is almost always the step that turns a foothold into full s
 #### 📈 Key Takeaway
 Level 5+ guardrails cannot be beaten with simple keyword requests. Bypassing them requires breaking semantic continuity—forcing the LLM to switch contexts (e.g., treating a prompt like raw code execution or a JSON object) to bypass input/output validation firewalls.
 
+
+#  Day 20 — Advanced AI Security + Vulnerabilities
+**Date:** Sun, June 22 • Week 3
+
+## 📘 Theory & Coursework
+### Tutedude
+* **Module 9 Lec 3-4:** Explored *Advanced AI Security + Securing LLMs*. Focused on defensive configurations, context isolation patterns, and deployment-stage guardrails.
+
+### TryHackMe [Web App Vulnerabilities II]
+* **File Inclusion:** Practiced identifying Local File Inclusion (LFI) and Remote File Inclusion (RFI) vectors, analyzing path traversal checks, and mitigating unauthorized file reads.
+* **Broken Authentication:** Studied session management flaws, credential brute-forcing, and logical bypass mechanisms in user authentication loops.
+
+---
+
+## 🔬 Practical Lab Work
+### AI Adversarial Testing
+* **HackAPorpmt Challenges:** Tested prompt injection payloads across 5 distinct difficulty levels at `hackaprompt.com` to analyze sanitization behaviors.
+* **Cross-LLM Portability:** Evaluated defensive strategies learned from previous Gandalf challenges by porting and testing the same adversarial vectors against alternative Large Language Model environments.
+
+---
+
+## 🎯 Bug Bounty Recon (HackerOne — 30 Min Session)
+Continued deep reconnaissance against the designated target application, focusing explicitly on automated attack-surface mapping and passive asset enumeration:
+
+### Subdomain Enumeration Methodology
+Executed multi-sourced discovery using native binaries alongside a custom script automation setup:
+```bash
+# 1. Native passive aggregation discovery
+subfinder -d target.com
+
+# 2. Custom targeted enumeration tool
+python3 subdomain_enum.py
+
+
 *Part of my 28-day cybersecurity learning roadmap.*
 ---
 
