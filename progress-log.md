@@ -630,7 +630,41 @@ subfinder -d target.com
 python3 subdomain_enum.py
 
 ```
-Part of my 28-day cybersecurity learning roadmap.
+
+
+#  Day 21 — Cryptography + SOC + Build #5
+**Date:** Mon, June 23 • Week 3 Finale 🎓
+
+## 📘 Theory & Coursework
+### Tutedude
+* **Module 7 Lec 1-3:** Explored *Data Protection + Cryptography*. Focused on foundational encryption algorithms, securing data at rest/in transit, and real-world vulnerabilities like JWT `none` algorithm attacks, weak RSA implementations, and hardcoded cryptographic keys.
+* **Module 10 Lec 1:** Studied *SOC (Security Operations Center) Overview*. Understood log aggregation, incident response workflows, and how security analysts monitor system threats.
+
+### TryHackMe
+* **Understanding Vulnerabilities Databases [VK]:** Learned to navigate and leverage threat intelligence resources (like CVE, NVD, and Exploit-DB) to analyze emerging infrastructure flaws.
+
+---
+
+## 🔬 Practical Lab & Tools
+### Build #5 — HuggingFace Model Auditor
+* Designed and mapped out a custom Python-based auditor tool to assess security vulnerabilities within hosted AI models on HuggingFace prior to utilizing automated scanner alternatives.
+
+---
+
+## 🎯 Bug Bounty Recon (HackerOne — 30 Min Session)
+Transitioned the target asset discovery phase from discovery collection to active server validation:
+
+### HTTP Probing & Status Filtering
+* **Workflow Acceleration:** Processed the master subdomain list generated during Day 20's active enumeration session through the multi-threaded `httpx` engine to pinpoint active web server interfaces.
+```bash
+cat subdomains.txt | httpx -silent -status-code
+```
+Target Isolation: Evaluated and screenshotted every responsive subdomain returning high-interest status configurations (200 OK, 301 Redirect, or 403 Forbidden) to isolate potential areas for directory fuzzing or authentication bypass attempts.
+
+✍️ Content & Technical Writing
+Medium Publication Complete: Finished structural drafting, finalized editing passes, and successfully published the Build #1: Python TCP Port Scanner article! This serves as my first official public proof-of-work submission.
+
+# Part of my 28-day cybersecurity learning roadmap.
 
 
 
